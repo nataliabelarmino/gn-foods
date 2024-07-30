@@ -1,6 +1,7 @@
 import Image from "next/image";
 import "./teste.css";
 
+// teste de alteração
 
 export default function Home() {
   return (
