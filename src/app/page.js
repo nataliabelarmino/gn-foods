@@ -1,7 +1,7 @@
 import Image from "next/image";
 import "./teste.css";
 
-// Eu amo Corinthans
+// SP, o maior do Brasil
 
 export default function Home() {
   return (
