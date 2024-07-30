@@ -83,6 +83,5 @@
   
   .container{
     margin-left: 45%;
-    width:100vh;
     flex: 1; /*ocupar todo o espaço da tela*/
   }
