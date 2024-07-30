@@ -1,6 +1,8 @@
 import Image from "next/image";
 import "./teste.css";
 
+// Eu amo Corinthans
+
 export default function Home() {
   return (
     <main className="main">
