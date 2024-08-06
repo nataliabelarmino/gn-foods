@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "./teste.css";
+import Link from "next/link";
 
 // SP, o maior do Brasil
 
@@ -35,6 +36,7 @@ export default function Home() {
 
       <div className="footer">
       </div>
+      <Link href="/qualquer">Abrir a próxima página</Link>
     </main>
   );
 }
