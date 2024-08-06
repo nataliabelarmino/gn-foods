@@ -36,7 +36,7 @@ export default function Home() {
 
       <div className="footer">
       </div>
-      <Link href="/qualquer">Abrir a próxima página bla bla bla</Link>
+      <Link href="/qualquer">Abrir a próxima página</Link>
     </main>
   );
 }
