@@ -1,0 +1,63 @@
+  .orange {
+      width: 15vw;
+      height: 100vh;
+      min-width: 140px;
+      max-width: 220px;
+      background-color: #FEAD10;
+      flex-direction: column;
+      justify-content: space-around;
+      display: inline-flex;
+      align-items: center;
+  }
+
+  .menu {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      height: 80vh;
+
+  }
+
+  .item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+      padding-left: 2.5vw;
+      box-sizing: border-box;
+      height: 100px;
+      width: 13vw;
+      border-bottom: 1px solid #992800;
+  }
+
+  .logo {
+      max-width: 100px;
+      height: auto;
+  }
+
+  .icons {
+      font-size: 24px;
+  }
+
+
+  .texto {
+  }
+
+  @media screen and (max-width: 1000px){
+    .icons {
+        font-size: 20px;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        height: 100px;
+        width: 140px;
+        font-size: 16px;
+        border-bottom: 1px solid #992800;
+    }
+  }

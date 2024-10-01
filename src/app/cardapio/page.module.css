@@ -1,0 +1,43 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo {
+    padding: 20px 40px;
+}
+
+.titulo {
+    color: #992800;
+}
+
+.text {
+    margin-bottom: 40px;
+    text-wrap: wrap;
+    color: #E0982D;
+}
+
+.text2 {
+    width: 70vw;
+    border-bottom: 1px solid;
+    color: #992800;
+}
+
+.botao {
+    background-color: #992800;
+    padding: 2px 4px;
+    color:#fff;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 480px) {
+    .text {
+        margin-bottom: 40px;
+        text-wrap: wrap;
+        width: 140px;
+    }
+}
