@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Menu from '../components/menu/Menu';
 import Styles from './page.module.css';
-import { Modal } from "antd";
+import Secao from './components/Secao';
 
 export default function Cardapio() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -26,14 +26,8 @@ export default function Cardapio() {
             <div className={Styles.conteudo}>
                 <h1 className={Styles.titulo}>Cardápio</h1>
                 <h5 className={Styles.text}>Seu cardápio é sua vitrine na GNFOOD’S </h5>
-                <h3 className={Styles.text2}>Categoria</h3>
-                <button onClick={showModal} className={Styles.botao}> + Adicionar categoria</button>
-                <Modal title="Nova categoria" open={isModalOpen} footer={null} onCancel={handleCancel}>
-                    <input name="myInput" placeholder='Nome da categoria'/>
-                    <button className={Styles.botao} onClick={handleOk}>Salvar</button>
-                   
-                </Modal>
-        
+                <Secao text="Categoria" buttonTitle=" + Adicionar categoria" title="Nova categoria" placeholder='Nome da categoria' buttonOKTitle={"Salvar"} /> 
+                <Secao text="Hambúrgueres artesanais" buttonTitle=" + Adicionar produto" title="Novo produto" placeholder='Nome' buttonOKTitle={"Salvar"} />
             </div>
         </div>
     );

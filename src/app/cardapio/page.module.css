@@ -25,6 +25,7 @@
     width: 70vw;
     border-bottom: 1px solid;
     color: #992800;
+    margin-top: 45px;
 }
 
 .botao {
@@ -33,6 +34,22 @@
     color:#fff;
     margin-top: 30px;
 }
+
+.botaoModal {
+    background-color: #992800;
+    padding: 2px 4px;
+    color:#fff;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.text3{
+    width: 70vw;
+    border-bottom: 1px solid;
+    color: #992800;
+  
+}
+
 
 @media screen and (max-width: 480px) {
     .text {
