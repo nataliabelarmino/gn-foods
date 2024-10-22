@@ -20,7 +20,7 @@ export default function Secao({ text, title, placeholder, buttonTitle, buttonOKT
 
     return (
         <div>
-            <h3 className={Styles.text2}>{text}</h3>
+            <h3 className={Styles.textcategoria}>{text}</h3>
             <button onClick={showModal} className={Styles.botao}>{buttonTitle}</button>
             <Modal title={title} open={isModalOpen} footer={null} onCancel={handleCancel}>
                 <input name="myInput" placeholder={placeholder} />

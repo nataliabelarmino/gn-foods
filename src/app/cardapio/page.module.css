@@ -19,11 +19,18 @@
     margin-bottom: 40px;
     text-wrap: wrap;
     color: #E0982D;
+
 }
 
 .text2 {
     width: 70vw;
     border-bottom: 1px solid;
+    color: #992800;
+    margin-top: 45px;
+}
+
+.textcategoria {
+    width: 70vw;
     color: #992800;
     margin-top: 45px;
 }
@@ -48,6 +55,21 @@
     border-bottom: 1px solid;
     color: #992800;
   
+}
+
+.label {
+    color: #992800;
+}
+
+.inputs {
+    border: 1px solid #992800;
+    border-radius: 4px;
+}
+
+.descricaoImagem {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
 }
 
 
