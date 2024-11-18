@@ -3,8 +3,9 @@ import { useState } from 'react';
 import Styles from '../page.module.css';
 import { Modal } from "antd";
 
-export default function Secao({ text, title, placeholder, buttonTitle, buttonOKTitle }) {
+export default function Secao({ text, title, placeholder, buttonTitle, buttonOKTitle, onOkClick }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [valorInput, setValorInput] = useState("");
 
     const showModal = () => {
         setIsModalOpen(true);
@@ -12,6 +13,11 @@ export default function Secao({ text, title, placeholder, buttonTitle, buttonOKT
 
     const handleOk = () => {
         setIsModalOpen(false);
+        onOkClick({
+            titulo: valorInput,
+            descricao: "descriçao...", 
+            imagem: "" 
+        });
     };
 
     const handleCancel = () => {
@@ -23,7 +29,7 @@ export default function Secao({ text, title, placeholder, buttonTitle, buttonOKT
             <h3 className={Styles.textcategoria}>{text}</h3>
             <button onClick={showModal} className={Styles.botao}>{buttonTitle}</button>
             <Modal title={title} open={isModalOpen} footer={null} onCancel={handleCancel}>
-                <input name="myInput" placeholder={placeholder} />
+                <input name="myInput" value={valorInput} onChange={e => setValorInput(e.target.value)} placeholder={placeholder} />
                 <button className={Styles.botaoModal} onClick={handleOk}>{buttonOKTitle}</button>
             </Modal>
         </div>

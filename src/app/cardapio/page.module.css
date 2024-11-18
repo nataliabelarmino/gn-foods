@@ -27,6 +27,8 @@
     border-bottom: 1px solid;
     color: #992800;
     margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .textcategoria {
@@ -72,6 +74,42 @@
     gap: 80px;
 }
 
+.uploadImage {
+    border: 2px dotted;
+    background-color: #eee;
+    height: 100px;
+    min-width: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtoItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text2DivSecundaria {
+    display: flex;
+    gap: 250px;
+}
+
+.olhoBotao {
+    background: none;
+    border: none;
+}
+
+.olho {
+    font-size: 20px;
+}
+
+.produtoItemSpan {
+    display: flex;
+    gap: 275px;
+}
 
 @media screen and (max-width: 480px) {
     .text {

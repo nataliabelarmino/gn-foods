@@ -1,6 +1,6 @@
   .orange {
       width: 15vw;
-      height: 100vh;
+      flex: 1;
       min-width: 140px;
       max-width: 220px;
       background-color: #FEAD10;
