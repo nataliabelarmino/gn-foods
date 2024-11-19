@@ -1,3 +1,3 @@
 export default () => (
-    <h1>papiro</h1>
+    <h1>Alguma coisa</h1>
 );

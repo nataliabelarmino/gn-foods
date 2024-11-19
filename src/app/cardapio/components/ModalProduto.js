@@ -8,7 +8,7 @@ export default function ModalProduto({ onOKClick }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [nome, setNome] = useState("");
   const [descricao, setDescricao] = useState("");
-  const [preco, setPreco] = useState();
+  const [preco, setPreco] = useState(0);
   const [imagem, setImagem] = useState();
 
   const showModal = () => {
@@ -57,8 +57,8 @@ export default function ModalProduto({ onOKClick }) {
           <div>
             <p className={Styles.label}>Adicione uma imagem</p>
 
-              <Upload listType="picture-card" maxCount={1} onChange={e => console.log(e.file.url)}>
-                <div className={Styles.uploadImage} style={{ display: imagem ? "none" : "flex"}}><span>+ Upload</span></div>
+              <Upload listType="picture-card" className={Styles.uploadImage} maxCount={1} onChange={e => setImagem(URL.createObjectURL(e.file.originFileObj))}>
+                <span>+ Upload</span>
               </Upload>
           </div>
         </div>

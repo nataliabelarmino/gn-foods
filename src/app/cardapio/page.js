@@ -8,10 +8,6 @@ import Categoria from "./components/Categoria";
 
 export default function Cardapio() {
   const [categorias, setCategorias] = useState([
-    { titulo: "X-Bacon", 
-      descricao: "descriçao...", 
-      imagem: "" 
-    },
   ]);
 
   return (
@@ -26,12 +22,19 @@ export default function Cardapio() {
           buttonTitle=" + Adicionar categoria"
           title="Nova categoria"
           placeholder="Nome da categoria"
-          buttonOKTitle={"Salvar"}
+          buttonOKTitle="Salvar"
           onOkClick={(novaCategoria) => setCategorias([...categorias, novaCategoria])}
         />
+       
+        
 
         {categorias.map(({ titulo, descricao, imagem }, i) => <Categoria titulo={titulo} descricao={descricao} imagem={imagem} key={i} />)}
+
+        <input className={Styles.btnAtualizar} type="button" value="Atualizar" /> 
       </div>
+
     </div>
+
+  
   );
 }

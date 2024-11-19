@@ -1,10 +1,10 @@
 .container {
     width: 100vw;
-    height: 100vh;
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-direction: row;
+    align-items: stretch;
 }
 
 .conteudo {
@@ -23,7 +23,7 @@
 }
 
 .text2 {
-    width: 70vw;
+    width: 78vw;
     border-bottom: 1px solid;
     color: #992800;
     margin-top: 45px;
@@ -78,7 +78,8 @@
     border: 2px dotted;
     background-color: #eee;
     height: 100px;
-    min-width: 100px;
+    max-width: 110px;
+    overflow: hidden;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -89,7 +90,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
+    padding-top: 25px;
+}
+
+.descricaoProduto {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .text2DivSecundaria {
@@ -108,7 +116,7 @@
 
 .produtoItemSpan {
     display: flex;
-    gap: 275px;
+    gap: 270px;
 }
 
 @media screen and (max-width: 480px) {
@@ -117,4 +125,15 @@
         text-wrap: wrap;
         width: 140px;
     }
+}
+
+.btnAtualizar{
+    margin-left: 1300px;
+    display: flex;
+    bottom: 15px;
+    right: 15px;
+    padding: 2px 4px;
+    color: #eee;
+    background-color: #992800;
+
 }
