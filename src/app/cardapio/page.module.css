@@ -116,7 +116,7 @@
 
 .produtoItemSpan {
     display: flex;
-    gap: 270px;
+    gap: 430px;
 }
 
 @media screen and (max-width: 480px) {
@@ -128,7 +128,7 @@
 }
 
 .btnAtualizar{
-    margin-left: 1300px;
+    margin-left: 1200px;
     display: flex;
     bottom: 15px;
     right: 15px;
