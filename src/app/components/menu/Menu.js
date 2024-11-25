@@ -7,7 +7,7 @@ import {
     UserOutlined,
     LineChartOutlined,
     ProfileOutlined,
-  } from '@ant-design/icons';
+} from '@ant-design/icons';
 import Link from 'next/link';
 
 export default function Menu() {
@@ -16,17 +16,18 @@ export default function Menu() {
             <Image src={Logo} className={Styles.logo} />
             <div className={Styles.menu}>
                 <Link href="/qualquer">
-                <div className={Styles.item}>
-                    <HomeOutlined className={Styles.icons}/>
-                    <p className={Styles.texto}> Início da tela</p>
-                </div>
+                    <div className={Styles.item}>
+                        <HomeOutlined className={Styles.icons} />
+                        <p className={Styles.texto}> Início da tela</p>
+                    </div>
                 </Link>
+                <Link href="/pedidos">
 
-                <div className={Styles.item}>
-                    <FileDoneOutlined className={Styles.icons}/>
-                    <p className={Styles.texto}> Pedidos</p>
-                </div>
-
+                    <div className={Styles.item}>
+                        <FileDoneOutlined className={Styles.icons} />
+                        <p className={Styles.texto}> Pedidos</p>
+                    </div>
+                </Link>
                 <div className={Styles.item}>
                     <  LineChartOutlined className={Styles.icons} />
                     <p className={Styles.texto}> Financeiro</p>

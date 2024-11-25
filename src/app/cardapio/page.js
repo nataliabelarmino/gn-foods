@@ -25,8 +25,6 @@ export default function Cardapio() {
           buttonOKTitle="Salvar"
           onOkClick={(novaCategoria) => setCategorias([...categorias, novaCategoria])}
         />
-       
-        
 
         {categorias.map(({ titulo, descricao, imagem }, i) => <Categoria titulo={titulo} descricao={descricao} imagem={imagem} key={i} />)}
 
