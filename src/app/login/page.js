@@ -2,8 +2,6 @@ import Image from "next/image";
 import "./teste.css";
 import Link from "next/link";
 
-// SP, o maior do Brasil
-
 export default function Home() {
   return (
     <main className="main">

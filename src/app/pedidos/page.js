@@ -41,12 +41,20 @@ export default function Cardapio() {
             </div>
             <div className={Styles.conteudo}>
             <div className={Styles.headerConteudo}>
-                    <span> Pedidos </span> 
-                    <span> Pedidos </span>
-                    <span> Pedidos </span>
+                    
                 </div>
             </div>
 
+          <div className={Styles.informacoes} > <p> Informaçoes de entrega</p>
+
+          <div className={Styles.informacoes} > <p> Informaçoes de entrega</p>
+
+          <div className={Styles.informacoes} > <p> Informaçoes de entrega</p>
+
+
+        </div> 
+        </div>
+        </div>
         </div>
 
 

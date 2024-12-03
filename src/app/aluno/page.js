@@ -6,6 +6,8 @@ export default async () => {
 
     return (<>
         <h1>Lista de categorias</h1>
-        <div>{categorias.rows.map(c => <div>{c.nome}</div>)}</div>
+        <div>{categorias.rows.map( c => (<div>{c.nome}</div>))} </div>
     </>);
 }
+
+

@@ -55,3 +55,18 @@
     color: white;
 
  }
+
+ .informacoes{
+    width: 1150px;
+    height: 50px;
+    margin-top: 100px;
+    margin-left: 60px;
+    background-color: #992800;
+    color: aliceblue;
+    display: flex;
+    vertical-align: middle;
+    font-weight: bold;
+    border-radius: 5px;
+    flex-direction: column;
+    
+ }
