@@ -1,14 +1,15 @@
-"use client";
-import { useState } from "react";
+// "use client";
+// import { useState } from "react";
 import Image from "next/image";
 import Menu from "../components/menu/Menu";
 import Styles from "./page.module.css";
 import Secao from "./components/Secao";
 import Categoria from "./components/Categoria";
+import { getCategorias } from "@/lib/categorias";
 
-export default function Cardapio() {
-  const [categorias, setCategorias] = useState([
-  ]);
+export default async function Cardapio() {
+  // const [categorias, setCategorias] = useState([]);
+  const categorias = await getCategorias();
 
   return (
     <div className={Styles.container}>
@@ -23,7 +24,7 @@ export default function Cardapio() {
           title="Nova categoria"
           placeholder="Nome da categoria"
           buttonOKTitle="Salvar"
-          onOkClick={(novaCategoria) => setCategorias([...categorias, novaCategoria])}
+          // onOkClick={(novaCategoria) => setCategorias([...categorias, novaCategoria])}
         />
 
         {categorias.map(({ titulo, descricao, imagem }, i) => <Categoria titulo={titulo} descricao={descricao} imagem={imagem} key={i} />)}

@@ -1,12 +1,14 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import Menu from "../components/menu/Menu";
-import Styles from "./page.module.css";
-import Select from "./components/Select"
+import Menu from "../../components/menu/Menu";
+import Styles from "../page.module.css";
+import Select from "../components/Select"
 
 
-export default function Cardapio() {
+export default function Cardapio({params}) {
+    const id_pedido = params.id;
+    console.log(id_pedido);
     const [pendentes, setPendentes] = useState([{ id: 1, nome: "Gabriel", estado: "Comfirme o pedido" }
     ]);
     const [aguardandoPreparo, setAguardandoPrepars] = useState([{ id: 34, nome: "Gabriel2", estado: "Em preparo" }
