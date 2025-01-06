@@ -5,7 +5,7 @@ import Menu from "../components/menu/Menu";
 import Styles from "./page.module.css";
 import Secao from "./components/Secao";
 import Categoria from "./components/Categoria";
-import { getCategorias } from "@/lib/categorias";
+import { getCategorias } from "../../lib/categorias";
 
 export default async function Cardapio() {
   // const [categorias, setCategorias] = useState([]);

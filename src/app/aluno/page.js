@@ -1,4 +1,4 @@
-import db from "@/lib/db";
+import db from "../../lib/db";
 
 export default async () => {
     const categorias = await db.query("select * from categoria");
