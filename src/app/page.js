@@ -3,10 +3,10 @@ import "./teste.css";
 import Link from "next/link";
 import Cardapio from './cardapio/page';
 
-// SP, o maior do Brasil
 
 export default function Home() {
   return (
-    <Cardapio />
+    //Cardapio
+   <Link href={'/login'}>Ir para o Login</Link>
   );
 }

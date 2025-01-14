@@ -1,40 +1,40 @@
 import Image from "next/image";
-import "./teste.css";
 import Link from "next/link";
+import Styles from "./page.module.css"
+
 
 export default function Home() {
   return (
-    <main className="main">
-      <div className="layout">
-        <div className="orange">
+    <main className={Styles.main}>
+      <div className={Styles.layout}>
+        <div className={Styles.orange}>
 
-          <img src="./img/logogn.jpg" className="logo"></img>
+          <img src="images/logogn.jpg" className={Styles.logo}></img>
 
         </div>
         <h1 style={{ textAlign: "center", marginTop: "90px", widht: "90px", height: "60px", color: "#AB2F2F", fontFamily: "Calibri, Helvetica, sans-serif" }}>LOGIN </h1>
-        <div className="container">
-          <div className="button">
+        <div className={Styles.container}>
+          <div className={Styles.botton}>
 
-            <input style={{border: "1px solid"}} className="but" type="text" placeholder="Email" />
+            <input  className={Styles.but} type="text" placeholder="Email" />
 
-            <input className="but" type="text" placeholder="Senha" />
+            <input className={Styles.but} type="text" placeholder="Senha" />
 
           </div>
 
-          <p className="text" style={{
-            textAlign: "center", margin: "30px",
-            color: "#AB2F2F", fontFamily: "Calibri, Helvetica, sans-serif", cursor: "pointer"
-          }}>Esqueceu sua senha?</p>
+          <p className={Styles.text}>Esqueceu sua senha?</p>
+          <p className={Styles.text}>Não possui uma conta? Cadastre</p>
+
 
           <div className="enviar">
-            <input className="botao" type="button" value="ENTRAR"></input>
+           <Link href={'/cardapio'}><input className={Styles.botao} type="button" value="ENTRAR"></input></Link> 
           </div>
         </div>
       </div>
 
-      <div className="footer">
+      <div className={Styles.footer}>
       </div>
-      <Link href="/qualquer">Abrir a próxima página bla bla bla</Link>
+      <Link href={'/cardapio'}></Link>
     </main>
   );
 }

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Logo from '../../assets/gnfoodslogo.jpg';
+import Logo from '../../assets/logogn.jpg';
 import Styles from './menu.module.css';
 import {
     HomeOutlined,
