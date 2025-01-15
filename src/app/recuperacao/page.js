@@ -15,20 +15,18 @@ export default function Home() {
         </div>
 
         <div className={Styles.container}>
-        <h1 className={Styles.text}>LOGIN</h1>
+        <h1 className={Styles.text}>REDEFINIR SENHA</h1>
+        <p className={Styles.text2}>Esqueceu sua senha?</p>
+          <Link href={'/cardapio'}><p className={Styles.text2}>Informe um email e enviaremos intruções de como recuperar sua senha. </p></Link>
           <div className={Styles.botton}>
 
             <input  className={Styles.but} type="text" placeholder="Email" />
 
-            <input className={Styles.but} type="text" placeholder="Senha" />
 
           </div>
 
-          <Link href={'/recuperacao'}><p className={Styles.text2}>Esqueceu sua senha?</p></Link>
-          <p className={Styles.text2}>Não possui uma conta? Cadastre</p>
-
           <div className="enviar">
-           <Link href={'/cardapio'}><input className={Styles.botao} type="button" value="ENTRAR"></input></Link> 
+           <Link href={'/cardapio'}><input className={Styles.botao} type="button" value="ENVIAR"></input></Link> 
           </div>
         </div>
       </div>
@@ -39,3 +37,9 @@ export default function Home() {
     </main>
   );
 }
+
+
+
+
+
+
