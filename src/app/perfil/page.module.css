@@ -1,0 +1,299 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  color: #992800;
+  background-color: white;
+}
+
+.conteudo {
+  flex: 1;
+}
+
+.capa {
+  background-color: #D9D9D9;
+  height: 12.5vh;
+}
+
+.subConteudo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.uploadImage {
+  background-color: rgb(196, 195, 195);
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50px);
+  flex-direction: column;
+}
+
+
+.paiTitulo {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.titulo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.botaoEditar {
+  border: 1px solid #992800;
+  background: none;
+  padding: 2px 10px;
+  color: #992800;
+  height: 25px;
+  min-width: 70px;
+  display: flex;
+  flex-direction: row;
+}
+
+.quadroDados {
+  border: 1px solid #992800;
+  width: 90%;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.linhaDado {
+  display: flex;
+  flex: 1;
+  gap: 10vw;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.modalDados_labelInputModalDados {
+  font-weight: bold;
+}
+
+.modalDados_inputModalDados {
+  border: 1px solid #992800;
+  color: #992800;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.botaoSalvar {
+  padding: 5px 15px;
+  background-color: #DCA15D;
+  color: #fff;
+  border: 1px solid #992800;
+  border-radius: 5px;
+  margin-left: 400px;
+}
+
+.quadrosSecundarios {
+  display: flex; 
+  flex-direction: row;
+  margin-top: 50px;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.quadroEBotao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  gap: 10px;
+}
+
+.divHorarios {
+  margin-top: 10px;
+  border: 1px solid #992800;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 300px;
+}
+
+.dia {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(153, 40, 0, 0.25);
+  margin-right: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border: none;
+}
+
+.modalHorarios_diaSelecionado {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  background-color: #DCA15D;
+  color: #fff;
+  margin-right: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border: none;
+}
+
+.divAvaliacoesPai {
+  flex: 1;
+}
+
+.quadroAvaliacoes {
+  border: 1px solid #992800;
+  margin-top: 10px;
+  padding: 20px;
+  max-height: 200px;
+  overflow: auto;
+}
+
+.titulosAvaliacao {
+  padding-right: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.linhaAvaliacao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  border: 1px solid #992800;
+  border-radius: 10px;
+}
+
+.itemLinhaTitulo {
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.itemLinha {
+  margin-right: 25px;
+}
+
+.modalHorarios_divDias {
+  margin-top: 25px;
+}
+
+.modalHorarios_nomeDia {
+  margin-top: 30px;
+}
+
+.modalHorarios_divHora {
+  margin-top: 30px;
+}
+
+.modalHorarios_inputHora {
+  border: 1px solid #992800;
+  color: #992800;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 10px;
+}
+
+.modalHorarios_divAberto {
+  margin-top: 30px;
+}
+
+.modalHorarios_abertoCheckbox {
+  margin-left: 10px;
+}
+
+.modalAvaliacoes_divSuperior {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.modalAvaliacoes_subDivSuperior {
+  border: 1px solid #992800;
+  width: 250px;
+  padding: 10px
+}
+
+.modalAvaliacoes_spanPedido {
+  text-align: center;
+  margin-right: 20px;
+  padding: 0 5px;
+  border-bottom: 1px solid #992800;
+}
+
+.modalAvaliacoes_data {
+  color: #DCA15D;
+}
+
+.modalAvaliacoes_secao {
+  margin-top: 25px;
+}
+
+.modalAvaliacoes_titulos {
+  font-weight: bold;
+  font-size: 1.01rem;
+  margin-bottom: 15px;
+}
+
+.modalAvaliacoes_tag {
+  border-radius: 8px;
+  color: #fff;
+  background-color: #E0982D;
+  padding: 5px;
+  width: 150px;
+  text-align: center;
+}
+
+.modalAvaliacoes_input {
+  width: 100%;
+  resize: none;
+  border-radius: 8px;
+  border: 1px solid #DCA15D;
+  padding: 10px;
+  outline: none;
+}
+
+.modalAvaliacoes_divCaracteres {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  color: #DCA15D;
+}
+
+.modalAvaliacoes_divBotao {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.botaoEnviar {
+  padding: 10px 15px;
+  background-color: #992800;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 25px;
+}

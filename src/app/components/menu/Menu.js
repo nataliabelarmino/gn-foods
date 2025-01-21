@@ -15,7 +15,7 @@ export default function Menu() {
         <div className={Styles.orange}>
             <Image src={Logo} className={Styles.logo} />
             <div className={Styles.menu}>
-                <Link href="/qualquer">
+                <Link href="/home">
                     <div className={Styles.item}>
                         <HomeOutlined className={Styles.icons} />
                         <p className={Styles.texto}> Início da tela</p>
@@ -31,17 +31,21 @@ export default function Menu() {
                 <div className={Styles.item}>
                     <  LineChartOutlined className={Styles.icons} />
                     <p className={Styles.texto}> Financeiro</p>
-                </div >
+                </div>
 
+                <Link href="/cardapio">
                 <div className={Styles.item}>
                     < ProfileOutlined className={Styles.icons} />
                     <p className={Styles.texto}> Cardápio</p>
-                </div >
+                </div>
+                </Link>
 
+                <Link href="/perfil">
                 <div className={Styles.item}>
                     <UserOutlined className={Styles.icons} />
                     <p className={Styles.texto}> Perfil</p>
-                </div >
+                </div>
+                </Link>
             </div >
         </div >
     );
