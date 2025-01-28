@@ -113,11 +113,15 @@
 
 .olho {
     font-size: 20px;
+    display: flex;
 }
 
 .produtoItemSpan {
     display: flex;
     gap: 430px;
+    margin-left: 62%;
+    white-space: nowrap;
+    display: flex;
 }
 
 @media screen and (max-width: 480px) {
@@ -129,7 +133,7 @@
 }
 
 .btnAtualizar{
-    margin-left: 1200px;
+    margin-left: 95%;
     display: flex;
     bottom: 15px;
     right: 15px;

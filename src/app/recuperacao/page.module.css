@@ -85,8 +85,10 @@
     color: #000000;
     font-family: Calibri, Helvetica, sans-serif; 
     cursor: "pointer";
-    margin-left: 140px;
     font-size: 17px;
+    text-align: center;
+    align-items: center;
+    display: flex;
 
   }
   

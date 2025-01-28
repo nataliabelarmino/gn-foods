@@ -2,23 +2,23 @@
    display: flex;
    flex-direction: row;
    height: 100vh;
-
-}
-
-.menuPedido{
-  width: 200px;
-  background-color: white;
-
-}
-
-.quantPedidos {
+   background-color: white;
+  }
+  
+  .menuPedido{
+   width: 200px;
+   background-color: white;
+   border-right: 1px solid;
+  }
+  
+  .quantPedidos {
    background-color: #992800;
    border-radius: 50%;
    padding: 5px 10px;
    color: white;
-}
-
-.conteudoHeader {
+  }
+  
+  .conteudoHeader {
    display: flex;
    flex-direction: row;
    gap: 15px;
@@ -26,151 +26,150 @@
    align-items: center;
    width: 100%;
    border-bottom: 1px solid #992800;
-}
-
-.nomePedido {
+  }
+  
+  .nomePedido {
    font-size: 20px;
-}
-
-.conteudo {
+  }
+  
+  .conteudo {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-}
-
-.dadosPedido {
+  }
+  
+  .dadosPedido {
    flex: 1;
    display: flex;
    flex-direction: column;
    justify-content: space-around;
- 
-}
-
-
-.headerMenuPedidos{
-    width: 100%;
-}
-
-.menuPedidosTitulo{
-    border-bottom: 1px solid red;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px
-}
-
-.divBusca, .selectFiltro{
-    width: 80px;
-    height: 25px;
-    border: 1px solid grey;
-    color: gray;
-}
-
-.busca{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 50px;
-}
- .selectPedido{
-    width: 100%;
-    margin-top: 20px;
-    border-top: 1px solid;
- }
-
- .selectPedidoHeader{
-    background-color: orange;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2px 5px;
- }
-
- .selectPedidoBotao{
-    background: none;
-    border: none;
-    color: white;
- }
-
-.identificadorDePedidoDiv {
+  }
+  
+  
+  .headerMenuPedidos{
+   width: 100%;
+  }
+  
+  .menuPedidosTitulo{
+   border-bottom: 1px solid red;
+   width: 100%;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px
+  }
+  
+  .divBusca, .selectFiltro{
+   width: 80px;
+   height: 25px;
+   border: 1px solid grey;
+   color: gray;
+  }
+  
+  .busca{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   margin-top: 50px;
+  }
+   .selectPedido{
+   width: 100%;
+   margin-top: 20px;
+   border-top: 1px solid;
+   }
+  
+   .selectPedidoHeader{
+   background-color: orange;
+   color: white;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 2px 5px;
+   }
+  
+   .selectPedidoBotao{
+   background: none;
+   border: none;
+   color: white;
+   }
+  
+  .identificadorDePedidoDiv {
    display: flex;
    flex-direction: row;
    gap: 10px;
-}
-
-.identificadorDePedido {
+  }
+  
+  .identificadorDePedido {
    color: grey;
-}
-
- .pedido {
-    border-bottom: 1px solid;
-    padding: 2px 5px;
-    width: 100%;
-    background-color: white;
-    border-top: none;
-    border-right: none;
-    text-align: left;
- }
-
- .informacoes {
+  }
+  
+   .pedido {
+   border-bottom: 1px solid;
+   padding: 2px 5px;
+   width: 100%;
+   background-color: white;
+   border-top: none;
+   border-right: none;
+   text-align: left;
+   }
+  
+   .informacoes {
    width: 60vw;
    margin-left: 60px;
- }
-
- .headerItem{
-    height: 50px;
-    background-color: #992800;
-    color: aliceblue;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    border-radius: 5px;
-    padding-left: 15px;
- }
-
-.conteudoItem {
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   }
+  
+   .headerItem{
+   height: 50px;
+   background-color: #992800;
+   color: aliceblue;
+   display: flex;
+   align-items: center;
+   font-weight: bold;
+   border-radius: 5px;
+   padding-left: 15px;
+   }
+  
+  .conteudoItem {
    background-color: #fff;
    padding: 30px;
    line-height: 2.0;
+  }
   
-}
-
-.item {
+  .item {
    font-weight: bold;
-}
-
-.totalParagrafo {
+  }
+  
+  .totalParagrafo {
    border-top: 1px solid;
    padding: 30px;
    background-color: white;
-}
-
-.botoesDiv {
+  }
+  
+  .botoesDiv {
    position: fixed;
    bottom: 10%;
    right: 10%;
    display: flex;
    flex-direction: row;
    gap: 10px;
-}
-
-.botaoRecusar {
+  }
+  
+  .botaoRecusar {
    width: 120px;
    height: 40px;
    background-color: #992900c0;
    color: white;
    border-radius: 5px;
    border: none;
-}
-
-.botaoAceitar {
+  }
+  
+  .botaoAceitar {
    width: 120px;
    height: 40px;
    background-color: #992800;
    color: white;
    border-radius: 5px;
    border: none;
-}
+  }

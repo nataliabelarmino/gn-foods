@@ -21,30 +21,31 @@ export default function Menu() {
                         <p className={Styles.texto}> Início da tela</p>
                     </div>
                 </Link>
-                <Link href="/pedidos">
 
+                <Link href="/pedidos">
                     <div className={Styles.item}>
                         <FileDoneOutlined className={Styles.icons} />
                         <p className={Styles.texto}> Pedidos</p>
                     </div>
                 </Link>
+
                 <div className={Styles.item}>
                     <  LineChartOutlined className={Styles.icons} />
                     <p className={Styles.texto}> Financeiro</p>
-                </div>
-
+                </div >
+                 
                 <Link href="/cardapio">
                 <div className={Styles.item}>
                     < ProfileOutlined className={Styles.icons} />
                     <p className={Styles.texto}> Cardápio</p>
-                </div>
+                </div >
                 </Link>
-
+               
                 <Link href="/perfil">
                 <div className={Styles.item}>
                     <UserOutlined className={Styles.icons} />
                     <p className={Styles.texto}> Perfil</p>
-                </div>
+                </div >
                 </Link>
             </div >
         </div >
