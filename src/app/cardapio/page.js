@@ -9,15 +9,15 @@ import Categoria from "./components/Categoria";
 export default function Cardapio() {
  const [categorias, setCategorias] = useState([]);
 
- useEffect(() => {
  const fetchAlunos = async () => {
- const response = await fetch('/api/categorias');
- const data = await response.json();
- setCategorias(data);
+    const response = await fetch('/api/categorias');
+    const data = await response.json();
+    setCategorias(data);
  };
- 
- fetchAlunos();
- }, [categorias]);
+
+ useEffect(() => { 
+    fetchAlunos();
+ }, []);
 
  const addCategoria = async (novaCategoria) => {
  const response = await fetch('/api/categorias', {
@@ -25,10 +25,10 @@ export default function Cardapio() {
  headers: {
  'Content-Type': 'application/json',
  },
- body: JSON.stringify(novaCategoria)
+ body: JSON.stringify(novaCategoria.titulo)
  });
 
- setCategorias([...categorias]);
+ fetchAlunos();
  }
 
  return (
