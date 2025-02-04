@@ -7,54 +7,54 @@ import Secao from "./components/Secao";
 import Categoria from "./components/Categoria";
 
 export default function Cardapio() {
- const [categorias, setCategorias] = useState([]);
+   const [categorias, setCategorias] = useState([]);
 
- const fetchAlunos = async () => {
-    const response = await fetch('/api/categorias');
-    const data = await response.json();
-    setCategorias(data);
- };
+   const fetchAlunos = async () => {
+      const response = await fetch('/api/categorias');
+      const data = await response.json();
+      setCategorias(data);
+   };
 
- useEffect(() => { 
-    fetchAlunos();
- }, []);
+   useEffect(() => {
+      fetchAlunos();
+   }, []);
 
- const addCategoria = async (novaCategoria) => {
- const response = await fetch('/api/categorias', {
- method: 'POST',
- headers: {
- 'Content-Type': 'application/json',
- },
- body: JSON.stringify(novaCategoria.titulo)
- });
+   const addCategoria = async (novaCategoria) => {
+      const response = await fetch('/api/categorias', {
+         method: 'POST',
+         headers: {
+            'Content-Type': 'application/json',
+         },
+         body: JSON.stringify(novaCategoria.titulo)
+      });
 
- fetchAlunos();
- }
+      fetchAlunos();
+   }
 
- return (
- <div className={Styles.container}>
- <Menu />
- <div className={Styles.conteudo}>
- <h1 className={Styles.titulo}>Cardápio</h1>
- <h5 className={Styles.text}>Seu cardápio é sua vitrine na GNFOOD’S </h5>
+   return (
+      <div className={Styles.container}>
+         <Menu />
+         <div className={Styles.conteudo}>
+            <h1 className={Styles.titulo}>Cardápio</h1>
+            <h5 className={Styles.text}>Seu cardápio é sua vitrine na GNFOOD’S </h5>
 
- <Secao
- text="Categoria"
- buttonTitle=" + Adicionar categoria"
- title="Nova categoria"
- placeholder="Nome da categoria"
- buttonOKTitle="Salvar"
- onOkClick={(novaCategoria) => addCategoria(novaCategoria)}
- />
+            <Secao
+               text="Categoria"
+               buttonTitle=" + Adicionar categoria"
+               title="Nova categoria"
+               placeholder="Nome da categoria"
+               buttonOKTitle="Salvar"
+               onOkClick={(novaCategoria) => addCategoria(novaCategoria)}
+            />
 
- {categorias.map(({ titulo, descricao, imagem }, i) => <Categoria titulo={titulo} descricao={descricao} imagem={imagem} key={i} />)}
+            {categorias.map(({ id, titulo }) => <Categoria id={id} titulo={titulo} key={id} />)}
 
- <input className={Styles.btnAtualizar} type="button" value="Atualizar" /> 
- </div>
+            <input className={Styles.btnAtualizar} type="button" value="Atualizar" />
+         </div>
 
- </div>
+      </div>
 
- 
- );
+
+   );
 }
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Styles from "../page.module.css";
 import { Button, Modal, Upload } from "antd";
 
-export default function ModalProduto({ onOKClick }) {
+export default function ModalProduto({ idCategoria, onOKClick }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [nome, setNome] = useState("");
   const [descricao, setDescricao] = useState("");
@@ -21,7 +21,7 @@ export default function ModalProduto({ onOKClick }) {
       nome,
       descricao,
       preco,
-      imagem,
+      idCategoria,
     });
   };
 

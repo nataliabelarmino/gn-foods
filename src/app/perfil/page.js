@@ -156,7 +156,7 @@ export default function Perfil() {
         <div className={Styles.capa}></div>
         <div className={Styles.subConteudo}>
           <Upload listType="picture-card" className={Styles.uploadImage} maxCount={1} onChange={e => setImagem(URL.createObjectURL(e.file.originFileObj))}>
-            <div style={{ fontSize: 20, display: "block"}}>
+            <div style={{ fontSize: 20, display: "block" }}>
               <CameraOutlined />
             </div>
             <div>Adicionar logomarca</div>
@@ -229,7 +229,7 @@ export default function Perfil() {
                 </div>
 
                 {avaliacoes.map((avaliacao, i) => <LinhaAvaliacao key={i} avaliacao={avaliacao} editaAvaliacao={novaAvaliacao => {
-                  let copiaAvaliacoes = [ ...avaliacoes ];
+                  let copiaAvaliacoes = [...avaliacoes];
                   copiaAvaliacoes[i] = novaAvaliacao;
                   setAvaliacoes(copiaAvaliacoes);
                 }} />)}
