@@ -11,7 +11,7 @@ export default function Categoria({ id, titulo }) {
   const [visivel, setVisivel] = useState(true);
 
   const fetchProdutos = async () => {
-    const response = await fetch(`/api/produtos/${id}`);
+    const response = await fetch(`/api/produtosPorCategoria/${id}`);
     const data = await response.json();
     setProdutos(data);
   };

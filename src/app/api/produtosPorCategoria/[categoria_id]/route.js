@@ -3,10 +3,9 @@ import pool from "@/lib/db";
 
 export async function GET(request, { params }) {
   try {
-    const { id_categoria } = params;
+    const { categoria_id } = params;
     const client = await pool.connect();
-    console.log(id_categoria)
-    const result = await client.query('SELECT * FROM produto WHERE id_categoria = $1', [id_categoria]);
+    const result = await client.query('SELECT * FROM produto WHERE id_categoria = $1', [categoria_id]);
     client.release();
     return NextResponse.json(result.rows);
   } catch (error) {

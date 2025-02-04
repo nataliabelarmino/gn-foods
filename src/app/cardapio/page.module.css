@@ -1,5 +1,6 @@
 .container {
     width: 100vw;
+    height: 100vh;
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -118,10 +119,14 @@
 
 .produtoItemSpan {
     display: flex;
-    gap: 430px;
-    margin-left: 62%;
     white-space: nowrap;
     display: flex;
+    gap: 250px;
+}
+
+.precoEBotao {
+    display: flex;
+    flex-direction: row;
 }
 
 @media screen and (max-width: 480px) {
